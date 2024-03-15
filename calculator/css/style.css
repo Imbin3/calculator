@@ -1,0 +1,145 @@
+*::after,
+*::before{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Comfortaa', sans-serif !important;
+  font-weight: 400;
+  font-size: 32px;
+  background-color: #FFF3EB;
+}
+
+input, 
+button{
+  font-family: 'Comfortaa', sans-serif !important;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title__text{
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 40px;
+  max-width: 464px;
+  border-radius: 75px;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.input[placeholder="Write first number"],
+.input[placeholder="Write second number"]{
+  font-size: 16px;
+}
+
+.input{
+  border-style: none;
+  outline: none;
+  padding: 20px;
+  max-width: 150px;
+  border-radius: 40px;
+  margin-bottom: 15px;
+}
+
+.input + .input{
+  margin-left: 20px;
+}
+
+.input__item{
+  flex-direction: row;
+}
+
+.btns__section{
+  margin-left: 40px;
+  margin-bottom: 15px;
+}
+
+.btn__section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px;
+  margin-left: -200px;
+}
+
+
+.btn{
+  width: 100px;
+  height: 100px;
+  border-style: none;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.btn:hover{
+  background-color: #8A9B6E;
+  color: #fff;
+}
+
+.compute{
+  border-style: none;
+  position: absolute;
+  background-color: #fff;
+  text-transform: uppercase;
+  margin-top: -220px;
+  margin-left: 20px;
+  padding: 90px 10px;
+  border-radius: 75px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.compute:hover{
+  background-color: #8A9B6E;
+  color: #fff;
+}
+
+.result{
+  background-color: #fff;
+  border-radius: 75px;
+  width: 377px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 377px;
+  height: 144px;
+}
+
+.result h4{
+  margin: 0;
+  padding: 0;
+}
+
+.result__title{
+  margin-bottom: 18px;
+  margin-top: 10px;
+}
+
+.result__counted{
+  font-size: 48px;
+}
